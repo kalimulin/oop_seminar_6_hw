@@ -1,16 +1,8 @@
 package first;
 
-public class CarInfoService {
+public interface CarInfoService {
     // в соответствии с принципом одной ответственности выносим метод в отдельный класс
-    public void getCarInterestInfo(String carType) {
-        if (carType.equals("sedan")) {
-            // do some action
-        }
-        if (carType.equals("crossover")) {
-            // do some action
-        }
-        if (carType.equals("universal")) {
-            // do some action
-        }
-    }
+    // в соответствии с принципом открытости/закрытости преобразуем класс в интерфейс и имплеменитуем отдельные
+    // сервисы информации по типу кузова автомобиля (sedan, crossover, universal)
+    public void getCarInterestInfo();
 }
