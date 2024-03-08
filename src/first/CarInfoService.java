@@ -1,3 +1,5 @@
+package first;
+
 public class CarInfoService {
     // в соответствии с принципом одной ответственности выносим метод в отдельный класс
     public void getCarInterestInfo(String carType) {
