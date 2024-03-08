@@ -1,8 +1,6 @@
-public class NotificationService {
+public interface NotificationService {
     // в соответствии с принципом одной ответственности выносим метод в отдельный класс
-    public void sendMessage(String typeMessage, String message) {
-        if (typeMessage.equals("email")) {
-            // send email with JavaMailSenderAPI
-        }
-    }
+    // в соответствии с принципом открытости/закрытости преобразуем класс в интерфейс и имплеменитуем отдельные сервисы
+    // по методу отправки сообщений
+    public void sendMessage(String message);
 }
